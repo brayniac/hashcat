@@ -266,7 +266,7 @@ int module_hash_decode (MAYBE_UNUSED const hashconfig_t *hashconfig, MAYBE_UNUSE
                     | TOKEN_ATTR_VERIFY_DIGIT;
 
   token.sep[3]      = '*';
-  token.len[3]      = 3;
+  token.len[3]      = 2;
   token.attr[3]     = TOKEN_ATTR_FIXED_LENGTH
                     | TOKEN_ATTR_VERIFY_DIGIT;
 
