@@ -177,9 +177,9 @@ KERNEL_FQ void m25410_init (KERN_ATTR_TMPS_ESALT (pdf14_tmp_t, pdf_t))
   md5_transform (w0_t, w1_t, w2_t, w3_t, digest);
 
   tmps[gid].digest[0] = digest[0];
-  tmps[gid].digest[1] = digest[1];
-  tmps[gid].digest[2] = digest[2];
-  tmps[gid].digest[3] = digest[3];
+  tmps[gid].digest[1] = digest[1] & 0xff;
+  tmps[gid].digest[2] = 0;
+  tmps[gid].digest[3] = 0;
 
   tmps[gid].out[0] = rc4data[0];
   tmps[gid].out[1] = rc4data[1];
